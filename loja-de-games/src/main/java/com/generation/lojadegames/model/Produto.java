@@ -23,9 +23,15 @@ public class Produto {
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private Long id;
 
+		@NotNull(message = "O atributo nome o é obrigatório")
+		private String nome;
+		
 		@NotNull(message = "O atributo descrição o é obrigatório")
 		private String descricao;
 		
+		@NotNull(message = "O atributo preço o é obrigatório")
+		private float preco;
+				
 		@ManyToOne
 		@JsonIgnoreProperties("produto")
 		private Categoria categoria;
@@ -52,6 +58,22 @@ public class Produto {
 
 		public void setCategoria(Categoria categoria) {
 			this.categoria = categoria;
+		}
+
+		public String getNome() {
+			return nome;
+		}
+
+		public void setNome(String nome) {
+			this.nome = nome;
+		}
+
+		public float getPreco() {
+			return preco;
+		}
+
+		public void setPreco(float preco) {
+			this.preco = preco;
 		}
 
 	}
