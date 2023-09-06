@@ -18,6 +18,9 @@ trata-se de um exercício prático de desenvolvimento de backend com spring.
 8. Crie um repositório remoto no seu Github 
 9. Envie o projeto para o repositório
 10. Na entrega das atividades na Plataforma, efetue a validação das 2 Classes e da Interface desenvolvidas no Recurso Produto, utilizando as seguintes camadas:
-  > Produto: Camada model
-  > ProdutoRepository: Camada repository
-  > ProdutoController: Camada controller
+
+        _Produto: Camada model_
+
+        _ProdutoRepository: Camada repository_
+
+        _ProdutoController: Camada controller_
